@@ -1,0 +1,18 @@
+
+Here are 5 more challenging programs to deepen your expertise in Python file handling:
+
+Custom Log File Rotation
+
+Write a program that monitors a log file's size. When it exceeds a certain size (e.g., 1MB), truncate the file, move the contents to a backup file (log_backup.txt), and start fresh. Implement this with the seek(), tell(), and truncate() functions.
+Binary File Manipulation
+
+Create a program that reads an image or binary file (e.g., .jpg, .png), writes the content to a new file, and compares the original and new file for equality byte by byte. Use binary mode (rb, wb) and ensure both files are identical.
+File Merge and Sort
+
+Write a program to merge the contents of multiple text files into a single file. After merging, sort the lines alphabetically, remove any duplicates, and write the sorted output to a new file.
+Search and Replace in Large Files
+
+Create a program to search for a specific word or phrase in a large file (without loading the entire file into memory). Replace all occurrences of that word with another and write the modified contents to a new file.
+Simulating a File-Based Key-Value Store
+
+Implement a simple key-value store where each key-value pair is stored in a file. The key should be the filename, and the value should be the file’s content. Include operations to add, update, retrieve, and delete key-value pairs, simulating a mini database.

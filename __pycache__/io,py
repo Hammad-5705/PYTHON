@@ -1,0 +1,17 @@
+
+# f=open('cel-to-frh.py','r')
+# txt=f.read()
+# print(txt)
+# f.close()
+
+# with open('tst','w') as f:
+#     txt=f.write("Hello")
+#     print(txt)
+
+with open('tst.txt','a') as f:
+    inp=input("Write text to enter in file : ")
+    f.write(inp)
+
+with open('tst.txt','r') as f:
+    txt=f.read()
+    print(txt)

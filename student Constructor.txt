@@ -1,0 +1,5 @@
+Student name : Ali 
+Father Name : Amja
+Class : 7 
+Rolno : 9090 
+ Address : Amja
