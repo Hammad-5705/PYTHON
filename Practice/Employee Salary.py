@@ -17,6 +17,7 @@ class emp:
     def salary(self):
         return self._salary
     
+    
     @name.setter
     def name(self,n):
         self._name=n
