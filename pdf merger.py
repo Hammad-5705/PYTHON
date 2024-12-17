@@ -1,13 +1,15 @@
-import pypdf
+from PyPDF2 import PdfWriter
+import os
 
+merger = PdfWriter()
 
-a=[]
-i=1
+direc="D:/Cources/PYTHON/garbage"
+os.chdir(direc)
+files=[file for file in os.listdir(direc) if file.endswith(".pdf")]
 
-while(i<=5):
-    a[i]=pypdf.PdfReader(f"D:/Cource/PYTHON/garbage/{i}.pdf")
-    i+=1
+for pdf in files:
+    merger.append(os.path.join(direc,pdf))
 
-data=""
-for i in len(a):
-    data=data+a[i]
+merger.write("merged-pdf.pdf")
+merger.close()
+print("SUCESSFULLY CREATED")
